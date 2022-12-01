@@ -1,5 +1,9 @@
+import './style.css'
+
 export function Index(){
     return (<>
-        Ton html ici
+        <main>
+            
+        </main>
     </>)
 }

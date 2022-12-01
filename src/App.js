@@ -3,6 +3,7 @@ import { Un } from './components/Un';
 import { Deux } from './components/Deux';
 import { Index } from "./components/Index";
 import { useState } from 'react';
+import {Helmet} from "react-helmet";
 
 
 
@@ -23,7 +24,11 @@ function App() {
   }
   console.log(router[page]);
   return (
+
     <>
+      <Helmet>
+        <title>My Title</title>
+      </Helmet>
     
     {router[page].component}
     </>
