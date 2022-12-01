@@ -30,7 +30,7 @@ function App() {
         <title>My Title</title>
       </Helmet>
     
-    {router[page].component}
+      {router[page].component}
     </>
   );
 }
