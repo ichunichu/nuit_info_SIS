@@ -1,26 +1,22 @@
 import './App.css';
-import { Un } from './components/Un';
-import { Deux } from './components/Deux';
 import { Index } from "./components/Index";
 import { useState } from 'react';
 import {Helmet} from "react-helmet";
+import {Jeu} from "./components/Jeu";
 
 
 
 
 
 function App() {
-  const [page,setPage] = useState("index")
+  const [page,setPage] = useState("jeu")
   const router = {
     "index":{
       "component":<Index setPage={setPage}/>
     },
-    "un":{
-      "component":<Un setPage={setPage}/>
+    "jeu":{
+      "component":<Jeu/>
     },
-    "deux":{
-      "component": <Deux setPage={setPage}/>
-    }
   }
   console.log(router[page]);
   return (
@@ -29,7 +25,7 @@ function App() {
       <Helmet>
         <title>My Title</title>
       </Helmet>
-    
+
     {router[page].component}
     </>
   );
