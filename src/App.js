@@ -1,6 +1,6 @@
 import './App.css';
-import { Un } from './components/Un';
-import { Deux } from './components/Deux';
+import { Un } from './components/pages/Un';
+import { Deux } from './components/pages/Deux';
 import { Index } from "./components/Index";
 import { useState } from 'react';
 
@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 
 function App() {
-  const [page,setPage] = useState("index")
+  const [page,setPage] = useState("un")
   const router = {
     "index":{
       "component":<Index setPage={setPage}/>
@@ -24,6 +24,7 @@ function App() {
   console.log(router[page]);
   return (
     <>
+
     
     {router[page].component}
     </>
