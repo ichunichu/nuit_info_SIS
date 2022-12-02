@@ -1,13 +1,9 @@
 
-body{
-    margin: 0px;
-}
-
 html{
     background-color: var(--main_bg_color);
     margin:0px;
     width: 100%;
-    /*height: 5000px;*/
+    height: 5000px;
     --main_bg_color : darkslategray;
     --header_color : gray;
 }
@@ -59,17 +55,41 @@ img{
 
 }
 .info>h1{
-color:whitesmoke;
-margin-left: 90px;
-font-size: 45px;
-border-bottom: 4px solid whitesmoke;
+    color:whitesmoke;
+    margin-left: 90px;
+    font-size: 45px;
+    border-bottom: 4px solid whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.desc{
+    color:whitesmoke;
+    font-size: 24px;
+
+    margin-left: 90px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+
+}
+
+.desc>li{
+    color:whitesmoke;
+    margin-left: 90px;
+    font-size: 24px;
+    }
 
 .info_list{
     margin:0px 90px;
     margin-top: 50px;
     padding-bottom: 50px;
 
+}
+.subTitle{
+    list-style: none;
+    margin-left: 90px;
+    font-size: 44px;
+    color:whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .active{
@@ -127,6 +147,7 @@ CARROUSEL
     margin: 40px;
     display: flex;
     justify-content: center;
+    height: 400px;
 }
 
 .slick-arrow::before{
@@ -135,129 +156,16 @@ CARROUSEL
     position: absolute;
 }
 
-/*page de contact*/
-.slider-container {
-    background: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .slider {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slides {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .slide:nth-of-type(even) {
-    background-color: rgb(250, 246, 212);
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: 400px;
-    scroll-snap-align: center;
-    margin-right: 0px;
-    box-sizing: border-box;
-    background: lightpink;
-    transform-origin: center center;
-    transform: scale(1);
-  }
-  
-  .slide__text {
-    font-size: 40px;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
-  
-  .slide a {
-    background: none;
-    border: none;
-  }
-  
-  a.slide__prev,
-  .slider::before {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
-  }
-  
-  a.slide__next,
-  .slider::after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
-  }
-  
-  .slider::before,
-  .slider::after,
-  .slide__prev,
-  .slide__next {
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-    box-sizing: border-box;
-  }
-  
-  .slider::before,
-  .slider::after {
-    content: "";
-    z-index: 1;
-    background: none;
-    pointer-events: none;
-  }
-  
-  .slider__nav {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    text-align: center;
-  }
-  
-  .slider__navlink {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: black;
-    margin: 0 10px 0 10px;
-  }
-
 
 .slick-list,.slick-slider,.slick-track{position:relative;display:block}
 .slick-loading .slick-slide,.slick-loading 
-.slick-track{visibility:hidden}
+.slick-track{visibility:hidden; height: 500px}
 .slick-slider{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{overflow:hidden;margin:0;padding:0;width: 1600px;}
 .slick-list:focus{outline:0}
 .slick-list.dragging{cursor:pointer;cursor:hand}
 .slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.slick-track{top:0;left:0}
+.slick-track{top:0;left:150;}
 .slick-track:after,.slick-track:before{display:table;content:''}
 .slick-track:after{clear:both}
 .slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] 
