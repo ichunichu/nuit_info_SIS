@@ -1,4 +1,4 @@
-#jeu{
+.jeu{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -6,7 +6,7 @@
     background-color: #282c34;
 
 }
-#jeu img{
+.jeu img{
     position: relative;
     margin: auto;
     height: 100%;
@@ -14,22 +14,23 @@
     width: 100vw;
     object-fit: cover;
     box-sizing: border-box;
+
 }
 
-#overlay{
+.overlay{
     top: 0;
     /*position: absolute;*/
     /*height: 100vh;*/
     width: 100vw;
     /*background-color: green;*/
 }
-#bottomBar{
+.bottomBar{
     bottom: 0;
     position: absolute;
 
 
 }
-#context{
+.context{
     display: flex;flex-direction: column;justify-content: center;
     background-color: rgba(0, 0, 0, 0.4);;
     height: 6em;
@@ -37,12 +38,12 @@
 }
 
 
-#context p {
+.context p {
     text-align: center;
     width: 100%;
 
 }
-#choice{
+.choice{
     height: 6em;
     width: 100vw;
     background-color: aliceblue;
