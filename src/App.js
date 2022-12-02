@@ -4,8 +4,7 @@ import { Index } from "./components/Index";
 import { useState } from 'react';
 import {Helmet} from "react-helmet";
 import { Contact } from './components/Contact';
-import {Un} from "./components/pages/Un";
-import {Deux} from "./components/pages/Deux";
+import {Jeu} from "./components/Jeu";
 
 
 
@@ -18,11 +17,8 @@ function App() {
     "index":{
       "component":<Index setPage={setPage}/>
     },
-    "un":{
-      "component":<Un setPage={setPage}/>
-    },
-    "deux":{
-      "component": <Deux setPage={setPage}/>
+    "jeu":{
+      "component":<Jeu/>
     },
     "contact":{
       "component": <Contact/>
