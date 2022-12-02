@@ -14,7 +14,7 @@ export function Contact(){
             <li><img alt="Lucille Ferran" src="./Lucille.jpg"/>
                 Lucille Ferran
                 Deuxième année, scenariste
-                
+                "Je vais faire une sieste de 10 minutes je penses."
                 
             </li>
             <li><img alt="Killian Guillaux" src="./Killian.jpg"/>
@@ -38,12 +38,12 @@ export function Contact(){
             <li><img alt="Florent Combet" src="./Florent.jpg"/>
                 Florent Combet
                 Deuxième année, 
-                ""
+                "Je ne suis pas inspiré."
             </li>
             <li><img alt ="Théo Lugagne" src="./Theo.jpg"/>
                 Théo Lugagne
                 Première année
-                ""
+                "T'autais pas une citation à mettre là ?"
             </li>
             <li><img alt="Jorian Gouagout" src="./Jorian.jpg"/>
                 Jorian Gouagout
