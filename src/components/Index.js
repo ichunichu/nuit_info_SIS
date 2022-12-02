@@ -25,7 +25,7 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
                 setPage("contact")
             }}> Jouer  </button>
         </div> 
-
+        <a id="info"></a>
         <div className="info">
             <br/>
             <h1>LA PREVENTION</h1>
@@ -140,8 +140,17 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
             </div>
            
         </div>
-        <footer>
+        
+        <a id="contact"></a>
 
+
+        <footer>
+            <img href="./logo.png" alt="logo"/>
+            <ul>
+                <li><a href="#top">Jeu</a></li>
+                <li><a href="#info">Informations complémentaires</a></li>
+                <li><button class="linkcontact" type="button">Contact</button></li>
+            </ul>
         </footer>
     </>
     )

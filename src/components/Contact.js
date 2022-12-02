@@ -8,53 +8,53 @@ export function Contact(){
     <div class="equipe">
         <h2>Voici notre équipe FANTIN!!!</h2>
         <ul>de l'iut Paul Sabatier, composé de :
-            <li><img alt="Fantin Elallouf" src="./Fantin.jpg"/>
+            <li><img alt="Fantin Elallouf" href="./Fantin.jpg"/>
                 Fantin Elallouf
                 Deuxième année, chef de l'équipe
                 "Tout à une fin sauf la banane qui en a deux"
                 
             </li>
-            <li><img alt="Lucille Ferran" src="./Lucille.jpg"/>
+            <li><img alt="Lucille Ferran" href="./Lucille.jpg"/>
                 Lucille Ferran
                 Deuxième année, scenariste
                 "Je vais faire une sieste de 10 minutes je penses."
                 
             </li>
-            <li><img alt="Killian Guillaux" src="./Killian.jpg"/>
+            <li><img alt="Killian Guillaux" href="./Killian.jpg"/>
                 Killian Guillautaux
                 Première années, expert en JS du groupe
                 "Trop de pression sur moiiiii !!!"
                 
             </li>
-            <li><img alt="Phuong Thao Nguyen" src="./Thao.jpg"/>
+            <li><img alt="Phuong Thao Nguyen" href="./Thao.jpg"/>
                 Phuong Thao Nguyen
                 Deuxième années, graphiste du groupe
                 "Vous voyez à quoi ressemble l'hepatite B ? He bah moi ouii."
                 
             </li>
-            <li><img alt="Léo Babaux" src="./Leo.jpg"/>
+            <li><img alt="Léo Babaux" href="./Leo.jpg"/>
                 Léo Babaux
                 Deuxième année,
                 "Je vais jeter les bouteilles parce que je me fais vraiment chier là..."
 
             </li>
-            <li><img alt="Florent Combet" src="./Florent.jpg"/>
+            <li><img alt="Florent Combet" href="./Florent.jpg"/>
                 Florent Combet
                 Deuxième année, 
                 "Je ne suis pas inspiré."
             </li>
-            <li><img alt ="Théo Lugagne" src="./Theo.jpg"/>
+            <li><img alt ="Théo Lugagne" href="./Theo.jpg"/>
                 Théo Lugagne
                 Première année
                 "T'autais pas une citation à mettre là ?"
             </li>
-            <li><img alt="Jorian Gouagout" src="./Jorian.jpg"/>
+            <li><img alt="Jorian Gouagout" href="./Jorian.jpg"/>
                 Jorian Gouagout
                 Première année, Faché avec les carroussels
                 "J'ai pas envie de parler mec"
 
             </li>
-            <li><img alt="Emmanuel Ah-Hong" src="./Emmanuel.jpg"/>
+            <li><img alt="Emmanuel Ah-Hong" href="./Emmanuel.jpg"/>
                 Emmanuel Ah-Hong
                 Première année, 
                 "Je vais faire un bouton qui envoie sur un rick roll"
