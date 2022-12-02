@@ -20,14 +20,17 @@ img{
 }
 
 .game{
-    background-color: darkgrey;
+    background:  url("../../public/background.png");
+    
     height: 93vh;
     display: flex;
     flex-direction: column;
 }
+
+
 .game_desc{
     width: 65%;
-    margin-top: 200px;
+    margin-top: 5,4vh;
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
@@ -36,7 +39,7 @@ img{
 
 }
 .launch_game{
-    margin-top: 80px;
+    margin-top: 13,5px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -47,11 +50,16 @@ img{
 }
 
 .info{
-    background-color: greenyellow;
-    margin-top: 0px;
+    background-color: var(--main_bg_color);
+    margin-top: 0px;    
 
 }
-
+.info>h1{
+color:whitesmoke;
+margin-left: 90px;
+font-size: 45px;
+border-bottom: 4px solid whitesmoke;
+}
 
 .info_list{
     margin:0px 90px;
@@ -67,7 +75,35 @@ img{
     background-color: gray;
     border-radius: 30px;
     width: 200px;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #ff0000,
+                0 0 0.8rem #ff0000,
+                0 0 2.8rem #ff0000,
+                inset 0 0 1.3rem #ff0000; 
+}
+
+.card>img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height:80px;
+}
+.card>p{
+margin:10px;
+}
+.card>p{
+    margin:10px;
+    }
+.card>ul>li{
+    margin-top:15px;
 }
 /*.info_list>li{
     display: none;    
@@ -84,22 +120,23 @@ CARROUSEL
 */
 
 .slick-slide{
-    margin: 50px;
-    width: 25%;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .slick-arrow::before{
     padding: 15px;
-    background-color: darkslategray;
+    background-color: rgb(20, 34, 34);
+    position: absolute;
 }
 
 
-.slick-list,.slick-slider,
-.slick-track{position:relative;display:block}
+.slick-list,.slick-slider,.slick-track{position:relative;display:block}
 .slick-loading .slick-slide,.slick-loading 
 .slick-track{visibility:hidden}
 .slick-slider{box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
-.slick-list{overflow:hidden;margin:0;padding:0}
+.slick-list{overflow:hidden;margin:0;padding:0;width: 1600px;}
 .slick-list:focus{outline:0}
 .slick-list.dragging{cursor:pointer;cursor:hand}
 .slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
