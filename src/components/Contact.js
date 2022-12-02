@@ -4,42 +4,57 @@ export function Contact(){
 
     <div class="equipe">
         <h2>Voici notre équipe FANTIN!!!</h2>
-        <ul>composé de :
-            <li><img alt="Fantin Elallouf" src="Fantin.jpg"/>
+        <ul>de l'iut Paul Sabatier, composé de :
+            <li><img alt="Fantin Elallouf" src="./Fantin.jpg"/>
                 Fantin Elallouf
+                <p>Deuxième année, chef de l'équipe</p>
+                <p>"Tout à une fin sauf la banane qui en a deux"</p>
                 
             </li>
-            <li><img alt="Lucille Ferran" src="Lucille.jpg"/>
+            <li><img alt="Lucille Ferran" src="./Lucille.jpg"/>
                 Lucille Ferran
+                <p>Deuxième année, scenariste</p>
+                <p></p>
                 
             </li>
-            <li><img alt="Killian Guillaux" src="Killian.jpg"/>
+            <li><img alt="Killian Guillaux" src="./Killian.jpg"/>
                 Killian Guillautaux
+                <p>Première années, expert en JS du groupe</p>
+                <p>"Trop de pression sur moiiiii !!!"</p>
                 
             </li>
-            <li><img alt="Phuong Thao Nguyen" src="Thao.jpg"/>
+            <li><img alt="Phuong Thao Nguyen" src="./Thao.jpg"/>
                 Phuong Thao Nguyen
+                <p>Deuxième années, graphiste du groupe</p>
+                <p>"Vous voyez à quoi ressemble l'hepatite B ? He bah moi ouii."</p>
                 
             </li>
-            <li><img alt="Léo Babaux" src="Leo.jpg"/>
+            <li><img alt="Léo Babaux" src="./Leo.jpg"/>
                 Léo Babaux
+                <p>Deuxième année, </p>
+                <p>"Je vais jeter les bouteilles parce que je me fais vraiment chier là..."</p>
 
             </li>
-            <li><img alt="Florent Combet" src="Florent.jpg"/>
+            <li><img alt="Florent Combet" src="./Florent.jpg"/>
                 Florent Combet
-                
+                <p>Deuxième année, </p>
+                <p>""</p>
             </li>
-            <li><img alt ="Théo Lugagne" src=""/>
+            <li><img alt ="Théo Lugagne" src="./Theo.jpg"/>
                 Théo Lugagne
-
+                <p>Première année</p>
+                <p>""</p>
             </li>
-            <li><img alt="Jorian Gouagout" src="#"/>
+            <li><img alt="Jorian Gouagout" src="./Jorian.jpg"/>
                 Jorian Gouagout
+                <p>Première année, Faché avec les carroussels</p>
+                <p>"J'ai pas envie de parler mec"</p>
 
             </li>
-            <li><img alt="Emmanuel Ah-Hong" src=""/>
+            <li><img alt="Emmanuel Ah-Hong" src="./Emmanuel.jpg"/>
                 Emmanuel Ah-Hong
-
+                <p>Première année, </p>
+                <p>"Je vais faire un bouton qui envoie sur un rick roll"</p>
             </li>
         </ul>
     </div>
