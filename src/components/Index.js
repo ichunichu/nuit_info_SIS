@@ -35,7 +35,9 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
                 <li>centre gratuit d’information, de dépistage et de diagnostic</li>
                 <li>centre de planification et d'éducation familiale</li>
             </ul>
-            <p></p>
+            <br/>
+            <h2 className='subTitle'>Le preservatif</h2>
+            <p className='desc'>Le préservatif le moyen le plus efficace pour lutter contre les IST. Utilisez un préservatif lors de chaque rapport sexuel et avec chaque partenaire tant que vous n’avez pas la certitude qu’il n’est pas porteur d’une IST.</p>
             <br/>
             <h1>LES IST : INFORMATIONS COMPLEMENTAIRES</h1>
             <br/>
