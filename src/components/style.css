@@ -47,27 +47,38 @@ img{
 
 .info{
     background-color: greenyellow;
-    height: 1500px;
     margin-top: 0px;
+
 }
 
 
 .info_list{
     display: flex;
     flex-direction: row;
-    margin:0px 65px;
-    justify-content: center;
+    margin:0px 90px;
     text-align: center;
     list-style: none;
     margin-top: 50px;
+    padding-bottom: 50px;
+    transition: 1s;
 }
 
-
+.active{
+    opacity: 100;
+}
 .info_list>li{
     margin: 0px 35px;
     background-color: gray;
     padding: 35px;
     border-radius: 30px;
+}
+/*.info_list>li{
+    display: none;    
+}*/
+
+
+.info_list>li>p{
+    margin: 20px 0px;
 }
 
 
