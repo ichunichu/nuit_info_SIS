@@ -208,7 +208,7 @@ export function Jeu({setPage}){
     useEffect(()=>{
         if (room == "baiseProtege"){
             setBaiseProteger(true)
-        }else if (room == "capote"){
+        }else if (room == "capote" || room == "salon"){
             setCapote(true)
         }
     },[room])
