@@ -154,9 +154,7 @@ CARROUSEL
     position: absolute;
 }
 
-.slick-track{
-    
-}
+
 .slick-list,.slick-slider,.slick-track{position:relative;display:block}
 .slick-loading .slick-slide,.slick-loading 
 .slick-track{visibility:hidden; height: 500px}
