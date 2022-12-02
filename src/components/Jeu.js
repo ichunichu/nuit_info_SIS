@@ -1,6 +1,5 @@
-import "./jeu.css";
-import {Un} from "./pages/Un";
-import {Deux} from "./pages/Deux";
+import styles from "./jeu.module.css";
+import {Page} from "./pages/Page";
 import {useState} from "react";
 
 export function Jeu(){
@@ -9,32 +8,41 @@ export function Jeu(){
     const rooms={
         "regles":{
             "component":<div>Page de regle</div>,
-            "dialogue":[""],
-            "clickable":[{"coords":[139, 191, 262, 248],
-                "action":""}]
+
         },
         "un":{
-            "component":<Un setRoom={setRoom}/>,
-            "dialogue":["fsfudgfuisdgiy",",fskhfudhsu"]
+            "background":"./salon.png",
+            "dialogues":[""],
+            "clickable":[{"coords":[1, 3, 4, 5],
+                "action":()=>{}}],
+            "choix":[
+                {"intitule":"Prendre les capotes","direction":"sex"},
+                {"intitule":"Refuser les capotes","direction":"not sex"},
+            ]
         },
-        "deux":{
-            "component": <Deux setRoom={setRoom}/>,
-            "dialogue":[""]
-        }
+
     }
 return (
-    <div id={"jeu"}>
+    <div className={styles.jeu} >
 
-        {rooms[room].component}
-        <div id={"overlay"}>
-            <div id={"bottomBar"}>
-                <div id={"context"}>
-                    <p>{rooms[room].dialogue[dial]}</p>
+        <Page background={rooms[room].background} clickable={rooms[room].clickable}/>
+        <div className={styles.overlay}>
+            <div className={styles.bottomBar}>
+                <div className={styles.context}>
+                    <p>{rooms[room].dialogues[dial]}</p>
                     <button onClick={()=>{
                         setDial(dial+1)
                     }}>next</button>
                 </div>
-                <div id={"choice"} >
+                <div className={styles.choice} >
+                    {rooms[room].choix.map((choix)=>{
+                        return <button onClick={()=>{
+                        setRoom(choix.direction);
+                        setDial(0)
+                        }
+                        }> {choix.intitule}</button>
+                    })}
+
 
                 </div>
             </div>

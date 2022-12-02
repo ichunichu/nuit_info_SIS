@@ -3,7 +3,7 @@ html{
     background-color: var(--main_bg_color);
     margin:0px;
     width: 100%;
-    height: 5000px;
+    /*height: 5000px;*/
     --main_bg_color : darkslategray;
     --header_color : gray;
 }

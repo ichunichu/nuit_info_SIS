@@ -1,4 +1,7 @@
+import {useState} from "react";
+
 export function Contact(){
+    const [phone,setPhone] = useState(6)
     return( <div class="contact">  
     <h1>Contactez-nous</h1>
 
@@ -79,20 +82,24 @@ export function Contact(){
                     </div>
                     <div id="slides__3" class="slide">
                         <span class="slide__text"><label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+                        <textarea id="subject" name="subject" placeholder="Votre message" style={{height:"200px"}}></textarea>
                         </span>
                         <a class="slide__prev" href="#slides__2" title="Prev"></a>
                         <a class="slide__next" href="#slides__4" title="Next"></a>
                     </div>
                     <div id="slides__4" class="slide">
                         <span class="slide__text"><label for="numero">numero</label>
-        	            <input type="range" value="24" min="06000000" max="07999999" oninput="this.nextElementSibling.value = this.value"/><output>0</output>
+        	            <input type="range" value={phone} onChange={(event)=>{
+                            console.log(event.target.value)
+                            setPhone(event.target.value)
+
+                        }} min="06000000" max="07999999" oninput="this.nextElementSibling.value = this.value"/><output>0{phone}</output>
                         </span>
                         <a class="slide__prev" href="#slides__3" title="Prev"></a>
                         <a class="slide__next" href="#slides__5" title="Prev"></a>
                     </div>
                     <div id="slides__5" class="slide">
-                        <span class="slide__text"> <input type="submit" value="Envoyer"/></span>
+                        <span class="slide__text"> <input type="submit" defaultValue="Envoyer"/></span>
                         <a class="slide__prev" href="#slides__4" title="Prev"></a>
                         <a class="slide__next" href="#slides__1" title="Prev"></a>
                     </div>
