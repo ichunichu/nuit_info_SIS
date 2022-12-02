@@ -1,11 +1,18 @@
-import './style.css'
 
+import './style.css';
+import Slider from 'react-slick';
 
 
 
 
 export function Index(){
-
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      };
   return (
     <>
         <header>
@@ -21,27 +28,45 @@ export function Index(){
 
         <div className="info">
             <br/>
-                
-            <ul className="info_list">
-                <li>
+
+            <div className="info_list">
+            <Slider {...settings}>
+                <div className='card'>
                     <p><strong>1</strong></p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
                     Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p>
-                </li>
-                <li><p><strong>2</strong></p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
-                Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p></li>
-                <li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
-                Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p></li>
-                <li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
-                Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p></li>
-                <li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
-                Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p></li>
-                <li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
-                Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p></li>
 
+                </div>
+                <div className='card'>
+                    <p><strong>2</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
+                    Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p>
+
+                </div>
+                <div className='card'>
+                    <p><strong>3</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
+                    Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p>
+
+                </div>
+                <div className='card'>
+                    <p><strong>4</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
+                    Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p>
+
+                </div>
+                <div className='card'>
+                    <p><strong>5</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatibus amet quidem ut doloribus, ipsum deleniti, mollitia possimus consequuntur tempora harum quis enim quas! Eos ea deserunt mollitia iure rerum!
+                    Commodi, molestiae! Quibusdam, nemo. Sit, voluptatum quibusdam temporibus cumque quia ex voluptas. Eum totam voluptatibus aliquam alias aliquid facere dolores autem, deleniti optio, unde labore iure repudiandae molestias sunt nemo?</p>
+
+                </div>
+                
+                
+            </Slider>   
                 
             
-            </ul>
+            </div>
         </div>
     </>
     )
