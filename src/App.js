@@ -1,10 +1,12 @@
 import './App.css';
-import { Un } from './components/Un';
-import { Deux } from './components/Deux';
+
 import { Index } from "./components/Index";
 import { useState } from 'react';
 import {Helmet} from "react-helmet";
 import { Contact } from './components/Contact';
+import {Un} from "./components/pages/Un";
+import {Deux} from "./components/pages/Deux";
+
 
 
 
@@ -24,7 +26,8 @@ function App() {
     },
     "contact":{
       "component": <Contact/>
-    }
+    },
+
   }
   console.log(router[page]);
   return (
