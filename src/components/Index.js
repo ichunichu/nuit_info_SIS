@@ -1,4 +1,4 @@
-import './index.css'
+import './style.css'
 import Slider from "react-slick"
 
 export function Index({setPage}){
@@ -17,15 +17,25 @@ export function Index({setPage}){
         </header>
 
         <div className="game">
-            <p className="game_desc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error iure ducimus sunt animi rerum magni ea corrupti magnam provident, dolore ipsam sapiente similique mollitia voluptas incidunt eius quia modi molestiae.
-            Odio tempore eaque error consequatur dignissimos porro, pariatur consectetur rem ad aspernatur nisi iusto alias blanditiis laudantium, harum dolore natus tenetur perferendis hic ipsam exercitationem asperiores dolor quibusdam mollitia! Deserunt!
-            Nihil alias, doloribus expedita assumenda quae incidunt, aliquam, itaque aliquid quidem illo aut dolor doloremque voluptatibus quam voluptatem. Minima nobis exercitationem facilis totam tenetur voluptatibus tempora dolor? Explicabo, unde iure!</p>
+            <p className="game_desc">La séxualité est un sujet qui nous concerne tous c'est pourquoi la prévention des infections sexuellement transmissibles est primordiale. 
+            <br/>Notre équipe a donc développer une expérience interactive afin de vous sensibiliser sur ces sujet importants.
+            <br/>Venez vivre une expérience de prévention contre le VIH !
+Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
             <button className="launch_game" onClick={()=>{
                 setPage("contact")
             }}> Jouer  </button>
         </div> 
 
         <div className="info">
+            <br/>
+            <h1>LA PREVENTION</h1>
+            <h2 className='subTitle'>Le dépistage</h2>
+            <ul className='desc'>
+                <li>dépistage au prêt d’un professionnel de santé (médecin généraliste, gynécologue, sage femme).</li>
+                <li>centre gratuit d’information, de dépistage et de diagnostic</li>
+                <li>centre de planification et d'éducation familiale</li>
+            </ul>
+            <p></p>
             <br/>
             <h1>LES IST : INFORMATIONS COMPLEMENTAIRES</h1>
             <br/>
@@ -125,10 +135,14 @@ export function Index({setPage}){
                 
                 
             </Slider>   
-                
+             
             
             </div>
+           
         </div>
+        <footer>
+
+        </footer>
     </>
     )
 }
