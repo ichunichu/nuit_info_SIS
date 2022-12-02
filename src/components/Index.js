@@ -151,12 +151,13 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
                 <li><a href="#top">Jeu</a></li>
                 <li><a href="#info">Informations complémentaires</a></li>
                 <li>
-                    <button className="launch_game" onClick={()=>{
-                setPage("contact")
-            }}> Contact  </button>
+                    
                     
                     </li>
             </ul>
+<button className="launch_game" onClick={()=>{
+                setPage("contact")
+            }}> Contact  </button>
         </footer>
     </>
     )
