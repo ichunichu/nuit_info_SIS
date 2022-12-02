@@ -1,15 +1,16 @@
 import {useState} from "react";
 import {Header} from "./Header";
+import './style.css'
 
 export function Contact({setPage}){
     const [phone,setPhone] = useState(6)
     return(<>
 
         <Header setPage={setPage}/>
-        <div class="contact">
+        <div className="contact">
     <h1>Contactez-nous</h1>
 
-    <div class="equipe">
+    <div className="equipe">
         <h2>Voici notre équipe FANTIN!!!</h2>
         <ul>de l'iut Paul Sabatier, composé de :
             <li><img alt="Fantin Elallouf" href="./Fantin.jpg"/>
@@ -67,53 +68,53 @@ export function Contact({setPage}){
     </div>
 
     <form>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slides">
-                    <div id="slides__1" class="slide">
-                        <span class="slide__text"><label for="fname">Nom & prénom</label>
+        <div className="slider-container">
+            <div className="slider">
+                <div className="slides">
+                    <div id="slides__1" className="slide">
+                        <span className="slide__text"><label for="fname">Nom & prénom</label>
                         <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom"/>
                         </span>
-                        <a class="slide__prev" href="#slides__4" title="Next"></a>
-                        <a class="slide__next" href="#slides__2" title="Next"></a>
+                        <a className="slide__prev" href="#slides__4" title="Next"></a>
+                        <a className="slide__next" href="#slides__2" title="Next"></a>
                     </div>
-                    <div id="slides__2" class="slide">
-                        <span class="slide__text"><label for="emailAddress">Email</label>
+                    <div id="slides__2" className="slide">
+                        <span className="slide__text"><label for="emailAddress">Email</label>
                         <input id="emailAddress" type="email" name="email" placeholder="Votre email"/>
                         </span>
-                        <a class="slide__prev" href="#slides__1" title="Prev"></a>
-                        <a class="slide__next" href="#slides__3" title="Next"></a>
+                        <a className="slide__prev" href="#slides__1" title="Prev"></a>
+                        <a className="slide__next" href="#slides__3" title="Next"></a>
                     </div>
-                    <div id="slides__3" class="slide">
-                        <span class="slide__text"><label for="subject">Message</label>
+                    <div id="slides__3" className="slide">
+                        <span className="slide__text"><label for="subject">Message</label>
                         <textarea id="subject" name="subject" placeholder="Votre message" style={{height:"200px"}}></textarea>
                         </span>
-                        <a class="slide__prev" href="#slides__2" title="Prev"></a>
-                        <a class="slide__next" href="#slides__4" title="Next"></a>
+                        <a className="slide__prev" href="#slides__2" title="Prev"></a>
+                        <a className="slide__next" href="#slides__4" title="Next"></a>
                     </div>
-                    <div id="slides__4" class="slide">
-                        <span class="slide__text"><label for="numero">numero</label>
+                    <div id="slides__4" className="slide">
+                        <span className="slide__text"><label for="numero">numero</label>
         	            <input type="range" value={phone} onChange={(event)=>{
                             console.log(event.target.value)
                             setPhone(event.target.value)
 
-                        }} min="06000000" max="07999999" oninput="this.nextElementSibling.value = this.value"/><output>0{phone}</output>
+                        }} min="06000000" max="07999999" onnput="this.nextElementSibling.value = this.value"/><output>0{phone}</output>
                         </span>
-                        <a class="slide__prev" href="#slides__3" title="Prev"></a>
-                        <a class="slide__next" href="#slides__5" title="Prev"></a>
+                        <a className="slide__prev" href="#slides__3" title="Prev"></a>
+                        <a className="slide__next" href="#slides__5" title="Prev"></a>
                     </div>
-                    <div id="slides__5" class="slide">
-                        <span class="slide__text"> <input type="submit" defaultValue="Envoyer"/></span>
-                        <a class="slide__prev" href="#slides__4" title="Prev"></a>
-                        <a class="slide__next" href="#slides__1" title="Prev"></a>
+                    <div id="slides__5" className="slide">
+                        <span className="slide__text"> <input type="submit" defaultValue="Envoyer"/></span>
+                        <a className="slide__prev" href="#slides__4" title="Prev"></a>
+                        <a className="slide__next" href="#slides__1" title="Prev"></a>
                     </div>
 
-                    <div class="slider__nav">
-                        <a class="slider__navlink" href="#slides__1"></a>
-                        <a class="slider__navlink" href="#slides__2"></a>
-                        <a class="slider__navlink" href="#slides__3"></a>
-                        <a class="slider__navlink" href="#slides__4"></a>
-                        <a class="slider__navlink" href="#slides__5"></a>
+                    <div className="slider__nav">
+                        <a className="slider__navlink" href="#slides__1"></a>
+                        <a className="slider__navlink" href="#slides__2"></a>
+                        <a className="slider__navlink" href="#slides__3"></a>
+                        <a className="slider__navlink" href="#slides__4"></a>
+                        <a className="slider__navlink" href="#slides__5"></a>
                     </div>
                 </div>
             </div>

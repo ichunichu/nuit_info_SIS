@@ -150,7 +150,9 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
             <ul>
                 <li><a href="#top">Jeu</a></li>
                 <li><a href="#info">Informations complémentaires</a></li>
-                <li><button class="linkcontact" type="button">Contact</button></li>
+                <li><button onClick={()=>{
+                    setPage("contact")
+                }} class="linkcontact" type="button">Contact</button></li>
             </ul>
         </footer>
     </>
