@@ -130,9 +130,6 @@ export function Index({setPage}){
             </div>
         </div>
         
-        <a id="contact"></a>
-
-
         <footer>
             <img href="./logo.png" alt="logo"/>
             <ul>
