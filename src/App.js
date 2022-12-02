@@ -4,6 +4,7 @@ import { Deux } from './components/Deux';
 import { Index } from "./components/Index";
 import { useState } from 'react';
 import {Helmet} from "react-helmet";
+import { Contact } from './components/Contact';
 
 
 
@@ -20,6 +21,9 @@ function App() {
     },
     "deux":{
       "component": <Deux setPage={setPage}/>
+    },
+    "contact":{
+      "component": <Contact/>
     }
   }
   console.log(router[page]);
