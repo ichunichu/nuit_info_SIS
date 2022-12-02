@@ -18,10 +18,10 @@ function App() {
       "component":<Index setPage={setPage}/>
     },
     "jeu":{
-      "component":<Jeu/>
+      "component":<Jeu setPage={setPage}/>
     },
     "contact":{
-      "component": <Contact/>
+      "component": <Contact setPage={setPage}/>
     },
 
   }

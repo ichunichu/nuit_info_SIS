@@ -1,5 +1,6 @@
 import './index.css'
 import Slider from "react-slick"
+import {Header} from "./Header";
 
 export function Index({setPage}){
     const settings = {
@@ -12,16 +13,14 @@ export function Index({setPage}){
     return (
     <>
 
-        <header>
-            <img src="./logo.png" alt=""/>
-        </header>
+        <Header setPage={setPage}/>
 
         <div className="game">
             <p className="game_desc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error iure ducimus sunt animi rerum magni ea corrupti magnam provident, dolore ipsam sapiente similique mollitia voluptas incidunt eius quia modi molestiae.
             Odio tempore eaque error consequatur dignissimos porro, pariatur consectetur rem ad aspernatur nisi iusto alias blanditiis laudantium, harum dolore natus tenetur perferendis hic ipsam exercitationem asperiores dolor quibusdam mollitia! Deserunt!
             Nihil alias, doloribus expedita assumenda quae incidunt, aliquam, itaque aliquid quidem illo aut dolor doloremque voluptatibus quam voluptatem. Minima nobis exercitationem facilis totam tenetur voluptatibus tempora dolor? Explicabo, unde iure!</p>
             <button className="launch_game" onClick={()=>{
-                setPage("contact")
+                setPage("jeu")
             }}> Jouer  </button>
         </div> 
 
