@@ -135,9 +135,10 @@ export function Index({setPage}){
             <ul>
                 <li><a href="#top">Jeu</a></li>
                 <li><a href="#info">Informations complémentaires</a></li>
-                <li><button class="linkcontact" type="button">Contact</button></li>
             </ul>
-
+            <div class="divlinkcontact">
+                <button class="linkcontact" type="button">Contact</button>
+            </div>
             <p class="infolegale">FANTIN!!!©2022</p>
         </footer>
     </>
