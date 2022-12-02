@@ -1,0 +1,57 @@
+#jeu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #282c34;
+
+}
+#jeu img{
+    position: relative;
+    margin: auto;
+    height: 100%;
+    padding-bottom: 6em;
+    width: 100vw;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+#overlay{
+    top: 0;
+    /*position: absolute;*/
+    /*height: 100vh;*/
+    width: 100vw;
+    /*background-color: green;*/
+}
+#bottomBar{
+    bottom: 0;
+    position: absolute;
+
+
+}
+#context{
+    display: flex;flex-direction: column;justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);;
+    height: 6em;
+    width: 100vw;
+}
+
+
+#context p {
+    text-align: center;
+    width: 100%;
+
+}
+#choice{
+    height: 6em;
+    width: 100vw;
+    background-color: aliceblue;
+}
+.area{
+    background-color: #61dafb;
+    position: absolute;
+
+}
+.area:hover{
+    cursor: pointer;
+}
