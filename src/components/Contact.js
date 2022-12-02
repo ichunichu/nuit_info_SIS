@@ -50,7 +50,7 @@ export function Contact({setPage}){
             <li><img alt ="Théo Lugagne" href="./Theo.jpg"/>
                 Théo Lugagne
                 Première année
-                "T'autais pas une citation à mettre là ?"
+                "T'aurais pas une citation à mettre là ?"
             </li>
             <li><img alt="Jorian Gouagout" href="./Jorian.jpg"/>
                 Jorian Gouagout

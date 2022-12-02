@@ -1,13 +1,14 @@
 import styles from "./jeu.module.css";
 import {Page} from "./pages/Page";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 export function Jeu({setPage}){
     const [baiseProteger,setBaiseProteger] = useState(false)
+    const [capote,setCapote] = useState(false)
 
     const [room,setRoom] = useState("reveil")
     const [dial,setDial] = useState(0)
-    const [capote,setCapote] = useState()
+
     const rooms={
         "regles":{
             "component":<div>Page de regle</div>,
@@ -90,8 +91,8 @@ export function Jeu({setPage}){
             "background":"./chambreQ.png",
             "dialogues":[{"text" : "T’as passé une bonne journée ? Moi je me suis levée à 9h30, ensuite j’ai mangé des Chocapics, et puis après je…","type":null}, {"text":"Vous écoutez à moitié ce qu’elle dit, on va pas se mentir, c’est long et elle se fiche un peu de ce que vous en pensez.","type":"italique"}, {"text":"Bon on est pas là pour passer la nuit à discuter, on y va ?","type":null}],
             "choix":[
-                {"intitule":"Prendre une capote","direction":"baiseInsist"},
-                {"intitule":"Ne pas prendre de capote","direction":"baiseNonProtege"},
+                {"intitule":"Prendre une capote","direction":"baiseInsist","capote":true},
+                {"intitule":"Ne pas prendre de capote","direction":"baiseNonProtege","capote":false},
             ]
         },
 
@@ -99,8 +100,8 @@ export function Jeu({setPage}){
             "background":"./chambreQ.png",
             "dialogues":[""],
             "choix":[
-                {"intitule":"Prendre une capote","direction":"baiseInsist"},
-                {"intitule":"Ne pas prendre de capote","direction":"baiseNonProtege"},
+                {"intitule":"Prendre une capote","direction":"baiseInsist","capote":true},
+                {"intitule":"Ne pas prendre de capote","direction":"baiseNonProtege","capote":false},
             ]
         },
 
@@ -204,9 +205,14 @@ export function Jeu({setPage}){
         },
 
     }
-    if (room == "baiseProtege"){
-        setBaiseProteger(true)
-    }
+    useEffect(()=>{
+        if (room == "baiseProtege"){
+            setBaiseProteger(true)
+        }else if (room == "capote"){
+            setCapote(true)
+        }
+    },[room])
+
 return (
     <div className={styles.jeu} >
 
@@ -222,6 +228,22 @@ return (
                 </div>
                 <div className={styles.choice} >
                     {(rooms[room].dialogues.length-1 == dial ? rooms[room].choix.map((choix)=>{
+                        if (room == "discuter" || room== "baiseChoix"){
+                            if (capote == false && choix.capote) {
+                                return <button disabled className={styles.boutton} onClick={() => {
+                                    setDial(0)
+                                    setRoom(choix.direction);
+                                }
+                                }
+                                >Vous n'avez pas pris de capote</button>
+                            }else {
+                                return <button  className={styles.boutton} onClick={() => {
+                                    setDial(0)
+                                    setRoom(choix.direction);
+                                }
+                                }
+                                >{(choix.intitule != null ? <>{choix.intitule}</>:<>suivant</>)}</button>
+                            }  }
                         return <button className={styles.boutton
                         } onClick={()=>{
                             setDial(0)
@@ -229,7 +251,6 @@ return (
                             if (choix.direction == null){
                                 setPage("index")
                             }else if (choix.direction == "medecin"){
-                                alert("medecin")
                                 if (baiseProteger){
                                     setRoom("medecin1")
                                 }else{

@@ -5,15 +5,8 @@ import styles from "../jeu.module.css";
 export function Page({background,clickable}){
 
     return( <>
-            <img useMap={"#infographic"} src={background} />
-            <map name="infographic">
+            <img src={background} />
 
-                <area shape="rect" coords="120,0,300,300"
-                      href="#" onClick={()=>{
-                          alert("fldji")
-                }}/>
-                target="_blank" alt="Mozilla"/>
-            </map>
             {/*
             {clickable.map((element)=>{
                 return (<div onClick={()=>{
