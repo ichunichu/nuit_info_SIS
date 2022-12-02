@@ -155,7 +155,7 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
                     
                     </li>
             </ul>
-<button className="launch_game" onClick={()=>{
+<button onClick={()=>{
                 setPage("contact")
             }}> Contact  </button>
         </footer>
