@@ -25,7 +25,7 @@ export function Index(){
             Nihil alias, doloribus expedita assumenda quae incidunt, aliquam, itaque aliquid quidem illo aut dolor doloremque voluptatibus quam voluptatem. Minima nobis exercitationem facilis totam tenetur voluptatibus tempora dolor? Explicabo, unde iure!</p>
             <button className="launch_game"> Jouer  </button>
         </div> 
-
+        <a id="info"></a>
         <div className="info">
             <br/>
 
@@ -68,6 +68,18 @@ export function Index(){
             
             </div>
         </div>
+        
+        <a id="contact"></a>
+
+
+        <footer>
+            <img href="./logo.png" alt="logo"/>
+            <ul>
+                <li><a href="#top">Jeu</a></li>
+                <li><a href="#info">Informations complémentaires</a></li>
+                <li><button class="linkcontact" type="button">Contact</button></li>
+            </ul>
+        </footer>
     </>
     )
 }
