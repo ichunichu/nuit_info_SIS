@@ -1,22 +1,30 @@
 import './App.css';
+import { Un } from './components/Un';
+import { Deux } from './components/Deux';
 import { Index } from "./components/Index";
 import { useState } from 'react';
 import {Helmet} from "react-helmet";
-import {Jeu} from "./components/Jeu";
+import { Contact } from './components/Contact';
 
 
 
 
 
 function App() {
-  const [page,setPage] = useState("jeu")
+  const [page,setPage] = useState("index")
   const router = {
     "index":{
       "component":<Index setPage={setPage}/>
     },
-    "jeu":{
-      "component":<Jeu/>
+    "un":{
+      "component":<Un setPage={setPage}/>
     },
+    "deux":{
+      "component": <Deux setPage={setPage}/>
+    },
+    "contact":{
+      "component": <Contact/>
+    }
   }
   console.log(router[page]);
   return (
@@ -25,8 +33,8 @@ function App() {
       <Helmet>
         <title>My Title</title>
       </Helmet>
-
-    {router[page].component}
+    
+      {router[page].component}
     </>
   );
 }
