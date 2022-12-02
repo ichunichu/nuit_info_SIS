@@ -140,6 +140,8 @@ export function Index({setPage}){
                 <li><a href="#info">Informations complémentaires</a></li>
                 <li><button class="linkcontact" type="button">Contact</button></li>
             </ul>
+
+            <p class="infolegale">FANTIN!!!©2022</p>
         </footer>
     </>
     )
