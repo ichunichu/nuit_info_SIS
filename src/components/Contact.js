@@ -1,8 +1,12 @@
 import {useState} from "react";
+import {Header} from "./Header";
 
-export function Contact(){
+export function Contact({setPage}){
     const [phone,setPhone] = useState(6)
-    return( <div class="contact">  
+    return(<>
+
+        <Header setPage={setPage}/>
+        <div class="contact">
     <h1>Contactez-nous</h1>
 
     <div class="equipe">
@@ -115,5 +119,6 @@ export function Contact(){
             </div>
         </div>   
     </form>
-  </div>)
+  </div>
+    </>)
 }

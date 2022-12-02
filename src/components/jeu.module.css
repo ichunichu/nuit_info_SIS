@@ -11,7 +11,7 @@
     margin: auto;
     height: 100%;
     padding-bottom: 6em;
-    width: 100vw;
+    /*width: 100vw;*/
     object-fit: cover;
     box-sizing: border-box;
 
@@ -39,20 +39,31 @@
 
 
 .context p {
+    color: aliceblue;
+    font-size: larger;
     text-align: center;
     width: 100%;
 
 }
 .choice{
-    height: 6em;
+    display:flex;
+    padding-block: 2em;
+    justify-content: space-evenly;
+    height: 4em;
     width: 100vw;
     background-color: aliceblue;
 }
-.area{
-    background-color: #61dafb;
-    position: absolute;
 
-}
-.area:hover{
-    cursor: pointer;
+
+.boutton{
+    width: 25%;
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #ff0000,
+    0 0 0.8rem #ff0000,
+    0 0 2.8rem #ff0000,
+    inset 0 0 1.3rem #ff0000;
 }
