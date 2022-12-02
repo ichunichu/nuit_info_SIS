@@ -1,5 +1,6 @@
 import './style.css'
 import Slider from "react-slick"
+import {Header} from "./Header";
 
 export function Index({setPage}){
     const settings = {
@@ -12,9 +13,7 @@ export function Index({setPage}){
     return (
     <>
 
-        <header>
-            <img src="./logo.png" alt=""/>
-        </header>
+        <Header setPage={setPage}/>
 
         <div className="game">
             <p className="game_desc">La séxualité est un sujet qui nous concerne tous c'est pourquoi la prévention des infections sexuellement transmissibles est primordiale. 
@@ -22,7 +21,7 @@ export function Index({setPage}){
             <br/>Venez vivre une expérience de prévention contre le VIH !
 Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
             <button className="launch_game" onClick={()=>{
-                setPage("contact")
+                setPage("jeu")
             }}> Jouer  </button>
         </div> 
         <a id="info"></a>
@@ -35,7 +34,9 @@ Prenez toutes les bonnes décisions et trouvez la meilleure fin ! </p>
                 <li>centre gratuit d’information, de dépistage et de diagnostic</li>
                 <li>centre de planification et d'éducation familiale</li>
             </ul>
-            <p></p>
+            <br/>
+            <h2 className='subTitle'>Le preservatif</h2>
+            <p className='desc'>Le préservatif le moyen le plus efficace pour lutter contre les IST. Utilisez un préservatif lors de chaque rapport sexuel et avec chaque partenaire tant que vous n’avez pas la certitude qu’il n’est pas porteur d’une IST.</p>
             <br/>
             <h1>LES IST : INFORMATIONS COMPLEMENTAIRES</h1>
             <br/>

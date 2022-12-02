@@ -1,8 +1,12 @@
 import {useState} from "react";
+import {Header} from "./Header";
 
-export function Contact(){
+export function Contact({setPage}){
     const [phone,setPhone] = useState(6)
-    return( <div class="contact">  
+    return(<>
+
+        <Header setPage={setPage}/>
+        <div class="contact">
     <h1>Contactez-nous</h1>
 
     <div class="equipe">
@@ -46,7 +50,7 @@ export function Contact(){
             <li><img alt ="Théo Lugagne" href="./Theo.jpg"/>
                 Théo Lugagne
                 Première année
-                "T'autais pas une citation à mettre là ?"
+                "T'aurais pas une citation à mettre là ?"
             </li>
             <li><img alt="Jorian Gouagout" href="./Jorian.jpg"/>
                 Jorian Gouagout
@@ -115,5 +119,6 @@ export function Contact(){
             </div>
         </div>   
     </form>
-  </div>)
+  </div>
+    </>)
 }
